@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        /* Agricultural green theme - light mode */
+        --background: 0.98 0.01 145;
+        --foreground: 0.2 0.02 145;
+        --card: 1 0 0;
+        --card-foreground: 0.2 0.02 145;
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0.02 145;
+        --primary: 0.55 0.18 145;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.92 0.03 145;
+        --secondary-foreground: 0.25 0.03 145;
+        --muted: 0.95 0.02 145;
+        --muted-foreground: 0.5 0.02 145;
+        --accent: 0.88 0.05 145;
+        --accent-foreground: 0.25 0.03 145;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.9 0.02 145;
+        --input: 0.9 0.02 145;
+        --ring: 0.55 0.18 145;
+        --chart-1: 0.6 0.18 145;
+        --chart-2: 0.65 0.15 120;
+        --chart-3: 0.7 0.12 100;
+        --chart-4: 0.55 0.2 160;
+        --chart-5: 0.5 0.22 140;
+        --sidebar: 0.98 0.01 145;
+        --sidebar-foreground: 0.2 0.02 145;
+        --sidebar-primary: 0.55 0.18 145;
+        --sidebar-primary-foreground: 0.99 0 0;
+        --sidebar-accent: 0.92 0.03 145;
+        --sidebar-accent-foreground: 0.25 0.03 145;
+        --sidebar-border: 0.9 0.02 145;
+        --sidebar-ring: 0.55 0.18 145;
+    }
+
+    .dark {
+        /* Agricultural green theme - dark mode */
+        --background: 0.18 0.02 145;
+        --foreground: 0.95 0.01 145;
+        --card: 0.22 0.02 145;
+        --card-foreground: 0.95 0.01 145;
+        --popover: 0.2 0.02 145;
+        --popover-foreground: 0.95 0.01 145;
+        --primary: 0.65 0.15 145;
+        --primary-foreground: 0.15 0.02 145;
+        --secondary: 0.28 0.03 145;
+        --secondary-foreground: 0.95 0.01 145;
+        --muted: 0.25 0.02 145;
+        --muted-foreground: 0.65 0.02 145;
+        --accent: 0.32 0.04 145;
+        --accent-foreground: 0.95 0.01 145;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.15 0.02 145;
+        --border: 0.3 0.02 145;
+        --input: 0.3 0.02 145;
+        --ring: 0.65 0.15 145;
+        --chart-1: 0.6 0.18 145;
+        --chart-2: 0.65 0.15 120;
+        --chart-3: 0.7 0.12 100;
+        --chart-4: 0.55 0.2 160;
+        --chart-5: 0.5 0.22 140;
+        --sidebar: 0.2 0.02 145;
+        --sidebar-foreground: 0.95 0.01 145;
+        --sidebar-primary: 0.65 0.15 145;
+        --sidebar-primary-foreground: 0.15 0.02 145;
+        --sidebar-accent: 0.28 0.03 145;
+        --sidebar-accent-foreground: 0.95 0.01 145;
+        --sidebar-border: 0.3 0.02 145;
+        --sidebar-ring: 0.65 0.15 145;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
